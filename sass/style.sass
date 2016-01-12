@@ -89,11 +89,16 @@ section#ppl
   display: flex
   flex-direction: column
   flex-flow: column wrap
+  justify-content: center
+
   .josh
     order: 1
     align-self: flex-start
   .adam
     order: 2
+    align-self: flex-start
+  .ethan
+    order: 3
     align-self: flex-start
 
 div.person
@@ -217,3 +222,43 @@ div.f
     float: left
   div.person.adam
     float: right
+
+// cursor
+.typed-cursor
+  opacity: 1
+  color: $bright
+  -webkit-animation: blink 0.7s infinite
+  -moz-animation: blink 0.7s infinite
+  animation: blink 0.7s infinite
+
+@keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+@-webkit-keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+
+@-moz-keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  100%
+    opacity: 1
