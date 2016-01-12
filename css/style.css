@@ -85,12 +85,16 @@ section#abt h1 em span {
 section#ppl {
   display: flex;
   flex-direction: column;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  justify-content: center; }
   section#ppl .josh {
     order: 1;
     align-self: flex-start; }
   section#ppl .adam {
     order: 2;
+    align-self: flex-start; }
+  section#ppl .ethan {
+    order: 3;
     align-self: flex-start; }
 
 div.person {
@@ -202,3 +206,5 @@ div.f {
 
   div.person.adam {
     float: right; } }
+
+/*# sourceMappingURL=style.css.map */
