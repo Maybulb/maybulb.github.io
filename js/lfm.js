@@ -13,7 +13,7 @@ $(document).ready(function() {
           }
           counter++
       });
-      $('#np1').append(html);
+      $('#npjosh').append(html);
   });
 
   $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=ltrlly&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
@@ -26,7 +26,7 @@ $(document).ready(function() {
           }
           counter++
       });
-      $('#np2').append(html);
+      $('#npadam').append(html);
   });
 
   $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=soodologica&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
           }
           counter++
       });
-      $('#np3').append(html);
+      $('#npethan').append(html);
   });
 
 });

@@ -3,9 +3,9 @@ $bright: #ffca30
 body
   padding: 0
   border: 0
-  max-width: 1200px
   margin: 0 auto
   color: black
+  max-width: 1200px
   font-family: 'Source Sans Pro', 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, 'FreeSans', Arial, sans-serif
 
 h3
@@ -17,6 +17,9 @@ h2
 h1
   font-weight: 300
 
+a
+  color: darken($bright, 18%)
+
 header, section
   display: block
   width: 75%
@@ -25,10 +28,6 @@ header, section
 header
   height: 100px
   margin: 50px auto 25px auto
-
-section
-  padding: 50px 25px
-  margin-bottom: 50px
 
 header div.logo
   margin: 0
@@ -71,194 +70,153 @@ nav.social a
 nav.social a:hover
   color: $bright
 
-section#abt
+// big hero 6
+
+section#hero
+  text-align: center
+  display: block
+  margin-bottom: 75px
+  h1, h2
+    line-height: 1.4
+    text-align: center
   h1
-    font-size: 3em
+    font-size: 54px
     margin: 0
-    font-weight: 300
-    text-align: justify
-  h1 em
-    font-style: normal
-    text-decoration: underline
-    color: $bright
-  h1 em span
+  h2
+    font-size: 36px
+    margin: 25px 0
+  a
+    background: $bright
+    border-radius: 5px
+    padding: 10px 12px
+    font-size: 24px
+    color: white
     text-decoration: none
-    color: black
+  img
+    display: block
+    margin: 0 auto
+    max-width: 100%
+    margin-bottom: 40px
+
+// features
+
+section#features
+  display: auto
+  margin: 0 auto
+  div.info, div.maths
+    display: block
+  figure
+    display: block
+    width: 100%
+    max-width: 420px
+    margin-top: -20px
+    img.uno, img.dos
+      width: 75%
+  div.maths
+    figure
+      margin-top: 20px
+  div.l, div.r
+    padding: 50px 0
+    width: 50%
+    height: 300px
+    overflow: hidden
+    margin-bottom: 10px
+  div.l
+    float: left
+  div.r
+    padding: 50px
+    width: calc(50% - 100px)
+    float: right
+
+// folks
 
 section#ppl
-  display: flex
-  flex-direction: column
-  flex-flow: column wrap
-  justify-content: center
-
-  .josh
-    order: 1
-    align-self: flex-start
-  .adam
-    order: 2
-    align-self: flex-start
-  .ethan
-    order: 3
-    align-self: flex-start
-
-div.person
-  width: 100%
-  text-align: center
-  margin-bottom: 50px
-  padding-bottom: 50px
-
-  div.interests, div.lastfm, div.twitter
-    width: 225px
-    margin: 0 auto
-    margin-top: 50px
-
-  h3
-    text-transform: uppercase
-    font-size: 1em
-    margin-bottom: 10px
-    font-weight: 400
-
   p
-    margin-top: 0
-    font-size: 1.25em
-    line-height: 1.5
-
-  h1
-    width: 200px
-    font-size: 2.5em
-    font-weight: 300
-    margin: 0 auto
-    line-height: 1
-
-  a
-    text-decoration: none
-    color: $bright
-
-div.person:nth-child(1)
-  border-bottom: 1px solid $bright
-
-footer
-  display: block
-  width: 90%
-  margin: 0 auto
-
-div.f
-  h3
     display: inline-block
-  h3:nth-child(1)
-    float: left
-  h3:nth-child(1)
-    float: right
+    font-weight: 300
+    font-size: 28px
+    line-height: 1.5
+    text-align: center
+    color: white
+    padding: 18px
+    margin: 40px 0 20px 0
+    border-radius: 5px
+    background: $bright
+    a
+      color: white
+
+// footer
 
 div.f
-  margin-bottom: 75px
+  line-height: 1.4
+  padding: 25px
+  max-width: 1200px
+  h3
+    text-align: center
 
-@media (max-width: 512px)
-  section#abt
-    h1
-      font-size: 2.6em
-      margin: 0
-      font-weight: 300
-      text-align: left
+// media queries for header
 
-  header div.logo
-    margin: 0
-    padding: 0
-    border: 0
-    background-image: url('../img/logo/logo.png')
-    background-image: url('../img/logo/logo.svg')
-    background-size: cover
-    width: 52px
-    float: left
-    height: calc(52px * 1.56689342404)
-
+@media screen and (max-width: 420px)
   nav.social
-    margin-top: 16pt
     font-size: 32px
-    letter-spacing: 6px
+    margin-top: 24px
+    letter-spacing: 8px
 
+// media queries for hero
 
-@media (max-width: 600px)
-  footer
-    display: block
-    width: 90%
-    margin: 0 auto
-
-  div.f
-    h3
-      display: block
-      text-align: center
-    h3:nth-child(1)
-      float: none
-    h3:nth-child(1)
-      float: none
-
-@media (max-width: 760px)
-  section#abt
-    height: 100px
-
-@media (min-width: 760px)
-  section#abt
-    height: 200px
+@media screen and (max-width: 420px)
+  section#hero
     h1
-      font-size: 4.5em
-      margin: 0
-      font-weight: 300
-      text-align: left
+      font-size: 42px
+    h2
+      font-size: 32px
+    img
+      margin-top: 48px
 
-@media (min-width: 920px)
-  div.person
-    width: 50%
+// media queries for features
 
-  div.person:nth-child(1)
-    border-bottom: 0
+@media screen and (max-width: 800px)
+  section#features
+    display: auto
+    margin: 0 auto
+    position: relative
+    top: 50px
+    div.info, div.maths
+      display: block
+      width: 100%
+    div.maths
+      margin-top: -25px
+    figure
+      display: block
+      width: 100%
+      height: inherit
+      padding: 0
+      margin: 0 auto
+      img.uno, img.dos
+        display: block
+        width: calc(100% - 50px)
+        padding-top: 20px
+        margin: 0 auto
+    div.l
+      float: none
+      width: 100%
+      height: inherit
+      padding: 0
+    div.r
+      padding: 0
+      width: 100%
+      float: none
+      text-align: center
 
+// media queries for the about
+
+@media screen and (max-width: 700px)
   section#ppl
-    display: flex
-    flex-direction: row
-    flex-flow: row wrap
+    p
+      font-size: 24px
 
-  div.person.josh
-    float: left
-  div.person.adam
-    float: right
-
-// cursor
-.typed-cursor
-  opacity: 1
-  color: $bright
-  -webkit-animation: blink 0.7s infinite
-  -moz-animation: blink 0.7s infinite
-  animation: blink 0.7s infinite
-
-@keyframes blink
-  0%
-    opacity: 1
-
-  50%
-    opacity: 0
-
-  100%
-    opacity: 1
-
-
-@-webkit-keyframes blink
-  0%
-    opacity: 1
-
-  50%
-    opacity: 0
-
-  100%
-    opacity: 1
-
-
-@-moz-keyframes blink
-  0%
-    opacity: 1
-
-  50%
-    opacity: 0
-
-  100%
-    opacity: 1
+@media screen and (max-width: 500px)
+  section#ppl
+    p
+      font-weight: 400
+      font-size: 18px
