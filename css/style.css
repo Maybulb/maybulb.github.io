@@ -4,7 +4,7 @@ body {
   margin: 0 auto;
   color: black;
   max-width: 1200px;
-  font-family: "Source Sans Pro", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, "FreeSans", Arial, sans-serif; }
+  font-family: "Fira Sans", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, "FreeSans", Arial, sans-serif; }
 
 h3 {
   font-weight: 400; }
@@ -91,6 +91,7 @@ section#hero {
   section#hero img {
     display: block;
     margin: 0 auto;
+    width: 563px;
     max-width: 100%;
     margin-bottom: 40px; }
 
@@ -119,7 +120,8 @@ section#features {
   section#features div.r {
     padding: 50px;
     width: calc(50% - 100px);
-    float: right; }
+    float: right;
+    line-height: 1.4; }
 
 section#ppl p {
   display: inline-block;
@@ -149,9 +151,10 @@ div.f {
     letter-spacing: 8px; } }
 @media screen and (max-width: 420px) {
   section#hero h1 {
-    font-size: 42px; }
+    font-size: 42px;
+    margin-top: 48px; }
   section#hero h2 {
-    font-size: 32px; }
+    font-size: 28px; }
   section#hero img {
     margin-top: 48px; } }
 @media screen and (max-width: 800px) {
