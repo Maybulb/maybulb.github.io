@@ -47,7 +47,10 @@
       <h1>Introducing Nimble.</h1>
       <h2>A Wolfram|Alpha&reg; menubar client for Mac OS X.</h2>
       <img src="img/nimble_screens/graphing.png">
-      <a href="https://github.com/madebybright/Nimble/releases/latest">Download</a>
+      <a id="download" href="https://github.com/madebybright/Nimble/releases/latest">Download</a>
+      <p class="releaseversion">
+        Current release: <span id="relspan"></span>
+      </p>
     </section>
 
     <section id="features">
@@ -85,5 +88,13 @@
         <h3>Made in Vancouver, Walsall, and Portland.<h3>
       </div>
     </footer>
+
+    <!-- release download-->
+    <script>
+      $.getJSON("https://api.github.com/repos/madebybright/nimble/releases/latest", function(data) {
+        $("#download").attr("href", data.assets[0]["browser_download_url"]);
+        $("#relspan").text(data.name);
+      });
+    </script>
   </body>
 </html>

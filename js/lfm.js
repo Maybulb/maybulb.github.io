@@ -2,6 +2,9 @@
 // ♫ JavaScript makes me want to swear like Plan B ♫ – JME
 
 $(document).ready(function() {
+  $.getJSON("https://api.github.com/repos/madebybright/nimble/releases/latest", function(data) {
+    $("#download").attr("href", json.assets[0]["browser_download_url"]);
+  });
 
   $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=jshtrmml&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
 
@@ -41,5 +44,4 @@ $(document).ready(function() {
       });
       $('#npethan').append(html);
   });
-
 });

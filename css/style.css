@@ -189,6 +189,11 @@ div.f {
       width: 100%;
       float: none;
       text-align: center; } }
+.releaseversion {
+  margin-top: 18px;
+  font-size: 14px;
+  opacity: 0.75; }
+
 @media screen and (max-width: 700px) {
   section#ppl p {
     font-size: 24px; } }
@@ -196,3 +201,5 @@ div.f {
   section#ppl p {
     font-weight: 400;
     font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */
