@@ -190,7 +190,7 @@ div.f {
       float: none;
       text-align: center; } }
 .releaseversion {
-  margin-top: 18px;
+  margin-top: 24px;
   font-size: 14px;
   opacity: 0.75; }
 
@@ -201,5 +201,3 @@ div.f {
   section#ppl p {
     font-weight: 400;
     font-size: 18px; } }
-
-/*# sourceMappingURL=style.css.map */
