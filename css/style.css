@@ -81,12 +81,14 @@ section#hero {
   section#hero h2 {
     font-size: 36px;
     margin: 25px 0; }
-  section#hero a {
+  section#hero a.button {
     background: #ffca30;
     border-radius: 5px;
     padding: 10px 12px;
     font-size: 24px;
     color: white;
+    text-decoration: none; }
+  section#hero a {
     text-decoration: none; }
   section#hero img {
     display: block;
