@@ -109,6 +109,7 @@ section#hero
       border-radius: 2px
       background: $nimble
       margin-right: 2px
+      margin-bottom: 15px
     a.button:hover
       background: white
       color: $nimble
@@ -336,3 +337,45 @@ section#dl
     height: 35px
     margin-top: 0px
     margin-bottom: 50px
+
+// VERY IMPORTANT!
+@media screen and (max-width: 500px)
+  header
+    padding: 0 30px
+  header div.logo
+    margin: 0
+    padding: 0
+    border: 0
+    background-image: url('../img/logo/logo.png')
+    background-image: url('../img/logo/logo.svg')
+    background-size: cover
+    width: 56px
+    float: left
+    /* I love maths */
+    height: calc(56px * 1.56689342404)
+    margin-top: 5px
+  nav.social
+    margin-top: 24pt
+    font-size: 28px
+    letter-spacing: 4px
+    left: 8px
+  #hero h1
+    font-size: 3em !important
+  #hero h2
+    font-size: 1.5em !important
+  #s1 h1
+    font-size: 2em !important
+  #s1 h2
+    font-size: 1.3em !important
+  #s2 p
+    width: 90% !important
+    font-size: 1.13em !important
+  footer
+    margin-top: 35px
+    h3
+      font-size: 0.9em
+  .press blockquote
+    font-size: 1.5em !important
+  #dl
+    p
+      font-size: 0.9em !important
