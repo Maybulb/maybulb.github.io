@@ -94,7 +94,7 @@
 
       <div class="section nimble-download">
         <div class="container">
-          <h1><a id="download" class="bigbutt">Download</a></h1>
+          <h1><a id="download" href="https://nimble-autoupdate.herokuapp.com/" class="bigbutt">Download</a></h1>
           <p>Nimble <span id="relspan"></span> is free and open source.</p>
           <p>Developers, make sure to <a href="https://github.com/Maybulb/Nimble/">check us out on GitHub</a>.</p>
         </div>
@@ -107,7 +107,6 @@
 
     <script>
       $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
-        $("#download").attr("href", data.assets[0]["browser_download_url"]);
         $("#relspan").text(data.tag_name);
       });
 

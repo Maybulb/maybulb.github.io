@@ -66,7 +66,7 @@
           <div class="description">
             <h1>Nimble<sup id="relspan"></sup></h1>
             <h2>A simple but powerful Wolfram|Alpha menubar client for macOS.</h2>
-            <a class="button" href="">Download</a> <a class="button" href="/nimble.html">Learn more</a>
+            <a class="button" href="https://nimble-autoupdate.herokuapp.com/">Download</a> <a class="button" href="/nimble.html">Learn more</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,6 @@
 
     <script>
       $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
-        $("#download").attr("href", data.assets[0]["browser_download_url"]);
         $("#relspan").text(data.tag_name);
       });
 
