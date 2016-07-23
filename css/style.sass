@@ -1,0 +1,351 @@
+@import "bourbon/bourbon"
+
+body
+  font-family: 'Europa', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'FreeSans', Arial, sans-serif
+  background: #fff
+  padding: 0
+  margin: 0
+  color: black
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+::selection
+  background: #ffca30
+  color: white
+
+div.sidebar
+  position: fixed
+  top: 0
+  left: 0
+  background: #ffca30
+  width: 250px
+  height: 100vh
+  padding: 0 25px
+  div.info
+    h2
+      font-weight: 400
+      font-size: 1.3em
+      a
+        color: black
+  div.social
+    position: absolute
+    bottom: 20px
+    p
+      text-align: center
+      margin: 0
+    a
+      text-decoration: none
+      color: black
+      margin-left: 10px
+      letter-spacing: -0.5px
+    a:first-of-type
+      margin-left: 0
+  h1
+    text-align: center
+    color: black
+    margin: 20px auto 30px auto
+    font-weight: 400
+    span
+      display: inline-block
+      padding: 5px 10px
+      color: black
+
+.inline-title
+  height: 32px
+  position: relative
+  top: 4px
+  padding: 0 5px 0 0
+
+div.content
+  float: right
+  width: calc(100vw - 300px)
+  height: 100vh
+  overflow-y: scroll
+  overflow-x: hidden
+
+div.section
+  display: block
+  padding: 20px 40px
+  max-width: 100vw
+  margin-bottom: 35px
+  border-bottom: 2px solid #ffca30
+  padding-bottom: 35px
+  a.button
+    display: inline-block
+    text-decoration: none
+    color: black
+    background: #ffca30
+    padding: 9px 14px
+    margin: 8px 5px
+
+div.section.hero
+  img
+    display: block
+    width: calc(100% - 40px)
+    padding: 0 20px
+    max-width: 400px
+    margin: 0 auto
+    padding-top: 15px
+  .description
+    text-align: center
+  h1
+    font-size: 2.5em
+    margin: 0
+    sup
+      font-size: 50%
+      vertical-align: top
+      margin-left: 5px
+  h2
+    font-weight: 400
+    font-size: 1.25em
+    margin: 20px 0
+
+div.section.nimble-lead
+  h1
+    font-size: 3em
+    margin: 20px 0 50px 0
+    text-align: center
+  .dictionary
+    font-size: 2em
+    .api
+      font-family: 'Times New Roman', sans-serif
+      font-style: italic
+    .highlight
+      background-color: #ffca30
+      padding: 3px 5px
+    .def
+      margin-left: 50px
+
+div.section.nimble-explanation
+  img
+    display: block
+    width: calc(100% - 40px)
+    padding: 0 20px
+    max-width: 500px
+    margin: 0 auto 20px auto
+  h2
+    font-size: 2em
+    font-weight: 400
+    text-align: center
+    margin: 30px 0 40px 0
+  p
+    margin-top: 15px
+    font-size: 1.3em
+    line-height: 1.5
+
+div.section.nimble-press
+  div.quote
+    margin: 50px 0
+  h1
+    font-size: 3em
+    text-align: center
+    margin: 0 0 40px 0
+  blockquote
+    margin-top: 15px
+    font-size: 1.3em
+    line-height: 1.5
+    margin-left: 16px
+    padding-left: 16px
+    border-left: 2px solid #ffca30
+  cite
+    a
+      color: darken(#ffca30, 25)
+      text-decoration: none
+      font-style: normal
+      font-size: 1.3em
+    a::before
+      content: "—"
+      margin-right: 14px
+
+div.section.nimble-download
+  h1
+    font-size: 3em
+    padding: 0
+    margin: 0
+    text-align: center
+  a.bigbutt
+    display: inline-block
+    text-align: center
+    font-weight: 700
+    color: black
+    text-decoration: none
+    margin: 0 auto 20px auto
+    padding: 12px 24px
+    background: #ffca30
+  p
+    font-size: 1.3em
+    line-height: 1.5
+    text-align: center
+    a
+      color: darken(#ffca30, 25)
+
+div.section.nimble-brand-lead
+  div.quote
+    margin: 50px 0
+  h1
+    font-size: 3em
+    text-align: center
+    margin: 0 0 40px 0
+  p
+    margin-top: 15px
+    font-size: 1.3em
+    line-height: 1.5
+  h1.bigbutt
+    font-size: 2em
+    padding: 0
+    margin: 40px 0 0 0
+    text-align: center
+  a.bigbutt
+    display: inline-block
+    text-align: center
+    font-weight: 700
+    color: black
+    text-decoration: none
+    margin: 0 auto 20px auto
+    padding: 12px 24px
+    background: #ffca30
+  a.logo
+    color: black
+    text-decoration: underline
+    position: absolute
+    bottom: 20px
+    left: 20px
+    p
+      margin: 0
+  a.logo.bw
+    color: white
+  div.logos
+    height: 215px
+  div.logo
+    position: relative
+    height: 175px
+    display: block
+    width: calc(50% - 40px)
+    margin: 0
+    padding: 20px
+    span
+      height: 175px
+      text-align: center
+      vertical-align: middle
+      margin: 0 auto
+    img
+      width: 50px
+      display: block
+  div.color
+    background: #ffca30
+    background-image: url('/img/logo.svg')
+    background-size: 60px
+    background-repeat: no-repeat
+    background-position: center center
+    float: left
+  div.bw
+    background-image: url('/img/logowhite.svg'), url('/img/doggo.jpg')
+    background-size: 60px, cover
+    background-repeat: no-repeat
+    background-position: center center, center
+    float: right
+
+div.container
+  margin: 0 auto
+  max-width: 800px
+
+div.footer
+  width: calc(100%-(25px*2))
+  padding: 0 25px 40px 25px
+  text-align: center
+  p
+    color: rgba(0, 0, 0, 0.5)
+    padding: 6px 12px
+    display: inline-block
+    margin: 20px auto 0 auto
+    font-size: 12px
+    line-height: 1.5
+  a
+    color: rgba(0, 0, 0, 0.67)
+    text-decoration: underline
+
+.nob
+  border-bottom: none !important
+  margin-bottom: 0px !important
+
+// MEDIA QUERIES
+
+// hide the sidebar
+@media (max-width: 1000px)
+  div.sidebar
+    padding: 15px 20px
+    h1
+      margin: 0 0 15px 0
+    h2
+      font-size: 1.125em !important
+      text-align: center
+      margin: 0
+      line-height: 1.5
+    div.social
+      position: relative
+      bottom: auto
+      margin-top: 20px
+      margin-bottom: 10px
+      a
+        text-decoration: underline
+    position: relative
+    height: auto
+    width: calc(100% - 40px)
+    margin-top: 0
+    float: none
+  div.content
+    width: auto
+    height: auto
+    padding: 20px
+    float: none
+
+@media (max-width: 900px)
+  div.section.nimble-lead
+    h1
+      font-size: 2.5em
+      margin: 20px 0 50px 0
+      text-align: center
+    .dictionary
+      font-size: 1.75em
+  div.section.nimble-press
+    h1
+      font-size: 2.5em
+  div.section.nimble-download
+    h1
+      font-size: 2.5em
+
+@media (max-width: 700px)
+  #trim
+    display: none
+  div.footer
+    p
+      font-size: 1em
+  div.section
+    padding: 20px
+
+@media (max-width: 400px)
+  #trim
+    display: none
+  div.section.nimble-lead
+    h1
+      font-size: 2em
+      margin: 10px 0 50px 0
+      text-align: center
+    .dictionary
+      font-size: 1.3em
+      .highlight
+        padding: 1px 3px
+  div.section.nimble-explanation
+    h2
+      font-size: 1.3em
+    p
+      font-size: 1em
+  div.section.nimble-press
+    h1
+      font-size: 2em
+    blockquote, cite a
+      font-size: 1em
+  div.footer
+    p
+      font-size: 0.6em

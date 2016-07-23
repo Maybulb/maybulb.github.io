@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bright &bull; We make stuff for screens.</title>
-    <meta name="description" content="We are Bright, a small team building apps, websites, and more." />
-    <meta name="keywords" content="bright, apps, applications, websites, web design, design, development, web development, app development, iOS apps, Mac OS X apps, Macintosh, macOS, OS X, mac OS, Apple, sites" />
+    <!-- hashtag optimisation -->
+    <title>Maybulb &bull; We make things for your screens.</title>
+    <meta charset="utf-8">
+    <meta name="description" content="We are Maybulb, a team of four people working on things for screens. Currently working on Nimble, a simple but powerful Wolfram|Alpha menubar client." />
+    <meta name="keywords" content="maybulb, nimble, wolframalpha, made by bright, madebybright, apps, applications, websites, web design, design, development, web development, app development, macOS apps, Macintosh, macOS, OS X" />
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="20 days">
+    <!-- stylin -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="favicons/manifest.json">
-    <link rel="shortcut icon" href="favicons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="Bright">
-    <meta name="application-name" content="Bright">
-    <meta name="msapplication-TileColor" content="#ffca30">
-    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffca30">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.typekit.net/itc2ksz.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href='bower_components/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,900|Space+Mono:400,400i,700" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" src="img/logo.svg">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Maybulb"/>
+    <meta name="msapplication-TileColor" content="#FFCA30" />
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <a href="/"><div class="logo" title="Bright"></div></a>
-      <nav class="social">
-        <a href="https://twitter.com/madebybright"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/madebybright"><i class="fa fa-github"></i></a>
-        <a href="mailto:info@madebybright.com?Subject=About%20Nimble"><i class="fa fa-envelope"></i></a>
-      </nav>
-    </header>
 
-    <section id="hero">
-      <div class="smoler">
-        <div class="l">
-          <h1>Nimble<a href="https://github.com/madebybright/Nimble/releases/latest"><sup><span id="relspan"></span></sup></a></h1>
-          <h2>A simple Wolfram|Alpha&reg; menubar client for macOS.</h2>
-          <div class="butto">
-            <a id="download" class="button" href="https://github.com/madebybright/Nimble/releases/latest">Download</a>
-            <a class="button" href="/nimble.html">Learn more</a>
+    <div class="sidebar">
+      <a href="/"><h1><img src="img/logo.svg" class="logo inline-title"><span>Maybulb</span></h1></a>
+      <div class="info">
+        <h2>We are a team of four people working on things for screens.</h2>
+        <h2 id="trim">We are a <a href="http://joshtrommel.com/">Canadian</a>, a <a href="http://adamgethin.com/">Briton</a>, an <a href="https://soops.github.io/">American</a>, and a <a href="https://github.com/jacobmarshall">Kiwi</a> creating apps, websites, and more.</h2>
+      </div>
+      <div class="social">
+        <p>
+          <a href="https://github.com/maybulb">GitHub</a>
+          <a href="https://twitter.com/maybulb">Twitter</a>
+          <a href="mailto:team@maybulb.com">Contact</a>
+          <a href="/brand.html">Brand</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="section hero nob">
+        <div class="container">
+          <img src="img/nimble_hero_anim/hero.png">
+          <div class="description">
+            <h1>Nimble<sup id="relspan"></sup></h1>
+            <h2>A simple but powerful Wolfram|Alpha menubar client for macOS.</h2>
+            <a class="button" href="">Download</a> <a class="button" href="/nimble.html">Learn more</a>
           </div>
         </div>
-        <div class="r">
-          <img src="img/nimbleindex/algebra.png">
-          <img src="img/nimbleindex/pi.png">
-        </div>
       </div>
-    </section>
 
-    <footer>
-      <div class="feet">
-        <h3>Bright is a collaboration between <a href="http://joshtrommel.com/">Josh Trommel</a>, <a href="http://soops.github.io">Ethan Arterberry</a>, <a href="http://adamgethin.com/">Adam Gethin</a>, and <a href="https://github.com/jacobmarshall">Jacob Marshall</a>.</h3>
-        <h3>Made in Vancouver, Portland, Walsall, and Auckland.<h3>
-    </footer>
+      <div class="footer">
+        <p>Maybulb has no affiliation with Wolfram Research or any of its subsidiaries.<br/><em>WolframAlpha</em>, <em>Wolfram|Alpha</em>, and <em>Wolfram</em> are trademarks of Wolfram Group, LLC.<br/>Nimble is licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a> license.</p>
+      </div>
+    </div>
 
-    <!-- release download-->
     <script>
-      $.getJSON("https://api.github.com/repos/madebybright/nimble/releases/latest", function(data) {
+      $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
         $("#download").attr("href", data.assets[0]["browser_download_url"]);
         $("#relspan").text(data.tag_name);
       });
