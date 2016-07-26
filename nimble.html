@@ -123,7 +123,7 @@
             }
           }
           console.log("Downloads: " + window.downloads)
-          $("#downloads").text(window.downloads)
+          $("#downloads").text(window.downloads.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
         }).error(function(e) {
           $("#downloadspan").hide();
         })
