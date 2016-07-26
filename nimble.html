@@ -95,7 +95,8 @@
       <div class="section nimble-download">
         <div class="container">
           <h1><a id="download" href="https://nimble-autoupdate.herokuapp.com/" class="bigbutt">Download</a></h1>
-          <p>Nimble <span id="relspan"></span> is free and open source.</p>
+          <p>Nimble <span id="relspan"></span> is free and open source.<span id="downloadspan"> Plus, it's been downloaded <span id="downloads"></span> times and counting. </span> Why not give it a try?</p>
+          <p></p>
           <p>Developers, make sure to <a href="https://github.com/Maybulb/Nimble/">check us out on GitHub</a>.</p>
         </div>
       </div>
@@ -109,6 +110,30 @@
       $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
         $("#relspan").text(data.tag_name);
       });
+
+      function getDLCount() {
+        $.getJSON("https://api.github.com/repos/maybulb/Nimble/releases", function(data) {
+          window.downloads = 0;
+          for(i = 0; i < data.length; i++) {
+            try {
+              window.downloads += data[i]["assets"][1]["download_count"]
+              window.downloads += data[i]["assets"][0]["download_count"]
+            } catch (e) {
+              window.downloads += data[i]["assets"][0]["download_count"]
+            }
+          }
+          console.log("Downloads: " + window.downloads)
+          $("#downloads").text(window.downloads)
+        }).error(function(e) {
+          $("#downloadspan").hide();
+        })
+      }
+
+      getDLCount()
+
+      setInterval(function() {
+        getDLCount();
+      }, 60000)
 
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
