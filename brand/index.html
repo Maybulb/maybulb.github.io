@@ -52,7 +52,7 @@
         <p>
           <a href="https://github.com/maybulb">GitHub</a>
           <a href="https://twitter.com/maybulb">Twitter</a>
-          <a href="mailto:team@maybulb.com">Contact</a>
+          <a id="hello">Contact</a>
           <a href="#">Brand</a>
         </p>
       </div>
@@ -93,6 +93,28 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // email obfuscator
+      // t e a m [at symbol] m a y b u l b [dot] c o m
+      obfuscated = [20, 5, 1, 13, "@", 13, 1, 25, 2, 21, 12, 2 ".", 3, 15, 13];
+
+      numberletters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+      email = [];
+
+      for (i = 0, len = obfuscated.length; i < len; i++) {
+        item = obfuscated[i];
+        if (!isNaN(item)) {
+          email.push(numberletters[item - 1]);
+        } else {
+          email.push(item);
+        }
+        if (typeof console !== "undefined" && console !== null) {
+          console.log(item);
+        }
+      }
+
+      $("#hello").attr("href", "mailto:" + (email.join("")));
 
       ga('create', 'UA-56480602-6', 'auto');
       ga('send', 'pageview');
