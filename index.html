@@ -64,9 +64,9 @@
         <div class="container">
           <img src="img/nimble_hero_anim/hero.png">
           <div class="description">
-            <h1>Nimble<sup id="relspan"></sup></h1>
+            <h1>Nimble</h1>
             <h2>A simple but powerful Wolfram|Alpha menubar client for macOS.</h2>
-            <a class="button" href="https://nimble-autoupdate.herokuapp.com/">Download</a> <a class="button" href="/nimble/">Learn more</a>
+            <a class="button" href="https://github.com/Maybulb/Nimble">Source</a> <a class="button" href="/nimble/">Learn more</a>
           </div>
         </div>
       </div>
@@ -77,10 +77,6 @@
     </div>
 
     <script>
-      $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
-        $("#relspan").text(data.tag_name);
-      });
-
       // email obfuscator
       // t e a m [at symbol] m a y b u l b [dot] c o m
       obfuscated = [20, 5, 1, 13, "@", 13, 1, 25, 2, 21, 12, 2, ".", 3, 15, 13];

@@ -97,10 +97,10 @@
 
       <div class="section nimble-download">
         <div class="container">
-          <h1><a id="download" href="https://nimble-autoupdate.herokuapp.com/" class="bigbutt">Download</a></h1>
-          <p>Nimble <span id="relspan"></span> is free and open source.<span id="downloadspan"> Plus, it's been downloaded <span id="downloads"></span> times and counting. </span> Why not give it a try?</p>
+          <h1><a id="download" class="bigbutt">Download</a></h1>
+          <p>Nimble has been deprecated since June 2020. All releases are no longer available. All versions of Nimble are free and open source software available on GitHub.</p>
           <p></p>
-          <p>Developers, make sure to <a href="https://github.com/Maybulb/Nimble/">check us out on GitHub</a>.</p>
+          <p>If you would like to view the source code of Nimble or compile it yourself, feel free to <a href="https://github.com/Maybulb/Nimble/">check us out on GitHub</a>.</p>
         </div>
       </div>
 
@@ -110,34 +110,6 @@
     </div>
 
     <script>
-      $.getJSON("https://api.github.com/repos/Maybulb/Nimble/releases/latest", function(data) {
-        $("#relspan").text(data.tag_name);
-      });
-
-      function getDLCount() {
-        $.getJSON("https://api.github.com/repos/maybulb/Nimble/releases", function(data) {
-          window.downloads = 0;
-          for(i = 0; i < data.length; i++) {
-            try {
-              window.downloads += data[i]["assets"][1]["download_count"]
-              window.downloads += data[i]["assets"][0]["download_count"]
-            } catch (e) {
-              window.downloads += data[i]["assets"][0]["download_count"]
-            }
-          }
-          console.log("Downloads: " + window.downloads)
-          $("#downloads").text(window.downloads.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
-        }).error(function(e) {
-          $("#downloadspan").hide();
-        })
-      }
-
-      getDLCount()
-
-      setInterval(function() {
-        getDLCount();
-      }, 60000)
-
       var email, i, item, len, numberletters, obfuscated;
 
       // email obfuscator
